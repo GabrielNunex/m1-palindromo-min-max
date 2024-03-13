@@ -27,5 +27,15 @@ function isPalindrome(str){
 }
 
 function arrayMaxMin(arr){
-    /* Seu código aqui */
+    let smallest = arr[0];
+    largest = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < smallest) {
+            smallest = arr[i];
+        } else if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+    return arr = [smallest, largest];
 }
+
